@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cronômetro</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+</head>
+<body>
+  <article id="page">
+    <div class="absolute top left">
+      <label for="loop">Contar a cada:</label><br />
+      <input type="text" class="abs" id="loop" value="5" /><label>(min)</label>
+    </div>
+    <div class="absolute top right">
+      <label for="dings">Sinos de aviso:</label><br />
+      <input type="text" class="abs" id="dings" value="3" /><label>(seg)</label>
+    </div>
+    <div class="absolute bottom right">
+      <span id="loops">0</span>
+    </div>
+  	<div class="centralize" id="cont_block">
+  	  <input type="text" class="time" id="minutos" value="05" />
+  	  <b id="sep">:</b>
+  	  <input type="text" class="time" id="segundos" value="00" />
+  	</div>
+  	<div class="clear"></div>
+  	<div class="centralize">
+  	  <a href="javascript:void(0);" id="play">Play</a>
+  	  <a href="javascript:void(0);" id="pause">Pause</a>
+      <a href="javascript:void(0);" id="reset">Reset</a>
+  	</div>
+  	<audio id="beep" src="src/ding.wav" preload="auto"></audio>
+  </article>
+ </body>
+ </html>
